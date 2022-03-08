@@ -1,0 +1,23 @@
+.headerop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+  color: #000000;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.headerop:hover {
+  color: #25a80b;
+}
+.title {
+  margin-top: 1px;
+  font-size: 12px;
+  font-weight: 400;
+  color: #000000;
+}
+.headerop_icons {
+  width: 25px !important;
+  height: 25px !important;
+  object-fit: contain;
+}

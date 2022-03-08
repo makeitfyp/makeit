@@ -1,0 +1,282 @@
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+.Dietplan_container {
+  margin: 0 auto;
+  width: 1070px;
+}
+
+.Dietplan_header {
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+.Dietplan_subheader {
+  font-size: 30px;
+  font-weight: 300;
+}
+
+.Dietplan_icon-btn,
+.Dietplan_add-meal-btn {
+  background: none;
+  border: none;
+  border-radius: 2px;
+}
+
+.Dietplan_icon-btn:hover,
+.Dietplan_icon-btn:focus,
+.Dietplan_icon-btn:active {
+  background: #d3d3d3;
+  outline: 0;
+}
+
+.Dietplan_add-meal-btn {
+  width: 50px;
+  margin: 0 auto;
+}
+
+.Dietplan_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  background-color: #f5f5f5;
+  padding: 0 20px;
+  height: 120px;
+}
+
+.Dietplan_shopping-list {
+  background: none;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 2px;
+  background-color: forestgreen;
+  color: white;
+}
+
+.Dietplan_shopping-list:hover,
+.Dietplan_shopping-list:focus,
+.Dietplan_shopping-list:active {
+  background: white;
+  color: forestgreen;
+  border: 1px solid forestgreen;
+}
+
+.Dietplan_calendar {
+  margin-top: 0;
+  display: flex;
+  padding: 0 20px;
+}
+
+.Dietplan_icon-grid ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Dietplan_icon-grid {
+  flex: 1;
+}
+
+.Dietplan_meal-types {
+  display: flex;
+  justify-content: space-around;
+  margin: 0;
+  margin-left: 152px;
+  padding: 0 20px;
+}
+
+.Dietplan_meal {
+  font-size: 23px;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  width: 160px;
+  justify-content: center;
+}
+
+.Dietplan_meal svg {
+  margin: 0 auto;
+  display: block;
+  margin-top: 15px;
+  cursor: pointer;
+}
+
+.Dietplan_overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+.Dietplan_modal {
+  position: absolute;
+  top: 140px;
+  left: 200px;
+  right: 200px;
+  bottom: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  background: rgb(255, 255, 255);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+  border-radius: 3px;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.24), 0 3px 12px 0 rgba(0, 0, 0, 0.12);
+  min-width: 500px;
+}
+
+.Dietplan_search-container h3 {
+  text-align: center;
+}
+
+.Dietplan_food-input {
+  width: 90%;
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #bdbdbd;
+  outline: none;
+}
+
+.Dietplan_search {
+  display: flex;
+}
+
+.Dietplan_loading {
+  align-self: center;
+  margin: 0 auto;
+}
+
+.Dietplan_days h3 {
+  padding: 50px 0;
+}
+
+.Dietplan_food-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Dietplan_food-list li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.Dietplan_food-list img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 3px;
+}
+
+.Dietplan_ingredients-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Dietplan_ingredients-list li {
+  font-size: 16px;
+  padding: 5px;
+}
+
+.Dietplan_food-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Dietplan_food-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 3px;
+}
+
+.Dietplan_food-item span {
+  font-size: 16px;
+  display: inline-block;
+  max-width: 160px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.Dietplan_food-item button {
+  background: none;
+  border: none;
+  text-decoration: underline;
+  font-size: 14px;
+  margin-top: 5px;
+}
+.Recipe_Input {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  align-items: center;
+}
+.Recipe_Input h2 {
+  width: 30%;
+}
+.Recipe_Input-input {
+  width: 40%;
+  height: 40px;
+}
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+.customButtons {
+  margin-left: 50px;
+  width: 100px;
+  height: 50px;
+  border: 1px solid forestgreen;
+  color: forestgreen;
+  font-size: 16px;
+}
+.customButtons:hover {
+  cursor: pointer;
+  background-color: forestgreen;
+  color: white;
+}
+.Dietplan_Seach {
+  background-color: white;
+  border: 1px solid forestgreen;
+  color: forestgreen;
+  width: 70px;
+}
+.Dietplan_Seach:hover {
+  background-color: forestgreen;
+  border: 1px solid white;
+  color: white;
+}
+.listItem {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: forestgreen;
+  border: 1px solid forestgreen;
+}
+.listItem:hover {
+  cursor: pointer;
+  color: white;
+  background-color: forestgreen;
+}

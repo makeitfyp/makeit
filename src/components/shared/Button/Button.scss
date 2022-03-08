@@ -1,0 +1,38 @@
+
+.Button{
+  padding: 0.5rem 1.2rem;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  font-size: 1rem;
+  &:hover{
+    transform: translateY(0.51px);
+  }
+}
+.Button--regular{
+  background-color: rgb(0, 0, 0);
+  border-radius: 1rem;
+  color: white;
+  &:hover{
+    background-color: rgba(23, 99, 19, 0.659);
+    color: blue;
+  }
+}
+.Button--accent{
+  background-color: hotpink;
+  padding: 1.5rem 2rem;
+  border-radius: 2rem;
+  color: white;
+  &:hover{
+    background-color: red;
+    color: blue;
+  }
+}
+.Button--transparent{
+  background-color: transparent;
+  border-radius: 0;
+  color: blue;
+  &:hover{
+    color: red;
+  }
+}

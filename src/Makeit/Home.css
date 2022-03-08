@@ -1,0 +1,50 @@
+.hero {
+  display: grid;
+  place-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url("../components/HERO.jpg");
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+  height: 570px;
+  background-position: center; /* Center the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+  -moz-box-shadow: 10px 10px 5px #ccc;
+  -webkit-box-shadow: 10px 10px 5px #ccc;
+  box-shadow: 10px 10px 5px #ccc;
+}
+
+.heading1 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 40px;
+  transform: translate(-1%, -50%);
+}
+.home_card {
+  background-color: white;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  display: flex;
+  cursor: pointer;
+  padding: 6px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.heading2 {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 40px;
+}
+.notFound {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 64px;
+  font-weight: 100;
+  margin-top: 10%;
+}
+.notFound p {
+  margin-top: 10px;
+}

@@ -1,0 +1,83 @@
+.feed {
+  width: 100%;
+}
+.feed_inputcontainer {
+  padding: 10px;
+  background-color: white;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+.feed_input {
+  border: 1px solid lightgray;
+  border-radius: 30px;
+  display: flex;
+  padding: 10px;
+  color: gray;
+  padding-left: 15px;
+}
+.feed_input > form {
+  display: flex;
+  width: 100%;
+}
+
+.feed_input > form > input {
+  border: none;
+  flex: 1;
+  margin-left: 10px;
+  outline-width: 0;
+  font-weight: 600;
+}
+.feed_input > form > button {
+  display: none;
+}
+.feed_inputoptions {
+  display: flex;
+  justify-content: space-evenly;
+}
+.Inputoptions {
+  display: flex;
+  align-items: center;
+  color: grey;
+  cursor: pointer;
+  font-weight: 100;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+}
+.Inputoptions:hover {
+  background-color: whitesmoke;
+  color: black;
+  cursor: pointer;
+}
+#selected {
+  display: flex;
+  align-items: center;
+  color: grey;
+  cursor: pointer;
+  font-weight: 100;
+  border-radius: 10px;
+  margin-top: 10px;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  background-color: lightgreen;
+}
+
+.App_body {
+  display: flex;
+  justify-content: center;
+}
+.App {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sideBar {
+  padding: 100px 100px 100px 100px;
+}
+#description {
+  margin-top: 10px;
+}

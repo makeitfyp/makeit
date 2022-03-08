@@ -1,0 +1,53 @@
+
+.Landing{
+  display: flex;
+  flex-flow: row wrap;
+  min-height: 85vh;
+  text-align: center;
+}
+.Landing__banner1, .Landing__data{
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1rem;
+}
+.Landing__banner2, .Landing__data{
+  flex: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 1rem;
+}
+.Landing__banner1{
+background-color: rgb(255, 246, 251);
+ }
+.Landing__banner2{
+    background-color: rgb(237, 252, 252);
+     }
+.Landing__banner__heading{
+   
+    margin-top: 100px;
+
+  }
+  .Plan_b {
+    border-radius: 2em;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    background-color: #029c42;
+    text-align: center;
+    height: 50px;
+    width: 200px;
+  margin-left: 30%;
+  margin-top: 10px;
+
+  }
+    
+@media (min-width:900px){
+  .Landing__banner__heading{
+    font-size: 3rem;
+  }
+  .Landing__data{
+    flex:1;
+  }
+}

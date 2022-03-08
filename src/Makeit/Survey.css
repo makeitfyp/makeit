@@ -1,0 +1,116 @@
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.Survey {
+  color: #029c42;
+}
+
+.Survey__loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: whitesmoke;
+  z-index: 1;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+.Survey__loading > icon {
+  color: white;
+  font-size: 4rem;
+  animation: spin 2s linear infinite;
+}
+
+.Survey__content {
+  padding: 1rem;
+}
+.Survey__heading {
+  text-align: center;
+  margin: 2rem;
+  font-size: 0.5rem;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+}
+.Survey__tabs {
+  border: solid 3px;
+  margin: auto;
+}
+.Survey__tabs > Tabs__head {
+  background: silver;
+  font-size: 1.4rem;
+}
+
+.Survey__goto {
+  margin-top: 3rem;
+  display: flex;
+}
+.Survey__goto__button--next {
+  font-size: 1.3rem;
+  background-color: #029c42;
+  margin-left: auto;
+}
+.Survey__goto__button--next:hover {
+  color: white;
+  background-color: #029c42;
+}
+.Survey__input--custom {
+  margin-left: 0;
+}
+.Survey__input--custom > input {
+  padding: 1rem 3rem;
+  border-radius: 0;
+  font-size: 1rem;
+  border-color: #e3e3e3;
+  color: whitesmoke;
+  margin-right: 2rem;
+}
+
+h2 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+table {
+  border: 2px solid forestgreen;
+}
+
+th {
+  border: 1px solid black;
+  padding: 5px 10px 5px 10px;
+}
+th:hover {
+  color: white;
+  background-color: forestgreen;
+  cursor: pointer;
+}
+tr {
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .Survey__content {
+    padding: 3rem 6rem;
+  }
+  .Survey__heading {
+    margin: 2rem 0 3rem 0;
+  }
+  .Survey__tabs {
+    width: 40rem;
+  }
+  .Survey__input--custom {
+    margin-left: 2rem;
+  }
+  .Survey__input--custom > input {
+    padding: 1rem 3rem;
+    border-radius: 0;
+    font-size: 1rem;
+    color: whitesmoke;
+    margin-right: 2rem;
+  }
+}

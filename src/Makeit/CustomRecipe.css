@@ -1,0 +1,44 @@
+.Filter {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#none {
+  padding: 10px 20px 10px 20px;
+  font-size: 24px;
+  font-weight: 100;
+  background-color: forestgreen;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  color: white;
+  margin-top: 10px;
+}
+#selected {
+  background-color: red;
+  border: 1px solid forestgreen;
+  color: forestgreen;
+  cursor: pointer;
+}
+#selected:hover {
+  background-color: red;
+  border: 1px solid forestgreen;
+  color: white;
+  cursor: pointer;
+}
+#none:hover {
+  background-color: red;
+  border: 1px solid forestgreen;
+  color: white;
+  cursor: pointer;
+}
+.recipe {
+  margin-top: 1000px;
+}
+#title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}

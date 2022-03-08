@@ -1,0 +1,40 @@
+.Filter {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: center;
+}
+.Filter p {
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 100;
+  background-color: lightgreen;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: 1px solid lightgreen;
+}
+#selected {
+  padding: 10px;
+  font-size: 24px;
+  font-weight: 100;
+  background-color: lightgreen;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: 1px solid lightgreen;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.Filter p:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.recipe {
+  margin-top: 1000px;
+}
+#title {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
