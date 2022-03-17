@@ -24,6 +24,9 @@ function ForgetPass() {
           navigate("/")
           }}>
           Request Reset Link        </button>
+          <button type="button"  onClick={() => navigate("/")}>
+          Back
+        </button>
       </form>
 
     </div>

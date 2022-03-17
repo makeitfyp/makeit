@@ -13,11 +13,11 @@ function Recents() {
         <h2>Recents</h2>
       </div>
       <div className="sidebar_stats">
-        {recentitems("Developer")}
+        {recentitems("Comsats")}
         {recentitems("FYP")}
-        {recentitems("Reactjs")}
-        {recentitems("Geek")}
-        {recentitems("Nerd")}
+        {recentitems("MakeIt")}
+        {recentitems("Abubakar")}
+        {recentitems("Malik Salman")}
       </div>
     </div>
   );

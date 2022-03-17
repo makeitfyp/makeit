@@ -86,6 +86,9 @@ function UserRegister() {
             }}>
           Sign Up
         </button>
+        <button type="button"  onClick={() => navigate("/")}>
+          Back
+        </button>
       </form>
     </div>
   );

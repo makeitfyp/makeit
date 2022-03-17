@@ -9,6 +9,8 @@ import ForumIcon from '@material-ui/icons/Forum';
 import OutdoorGrillIcon from '@mui/icons-material/OutdoorGrill';
 import LogoutIcon from '@mui/icons-material/Logout';
 import RestaurantIcon from '@material-ui/icons/Restaurant';
+import QuizIcon from '@mui/icons-material/Quiz';
+
 import ViewInArIcon from '@mui/icons-material/ViewInAr';
 import { useNavigate } from "react-router-dom";
 import "./Header.css";
@@ -100,6 +102,11 @@ function Header(props) {
           Icon={ForumIcon}
           title="Feedback"
           onClick={() => navigate("/UserFeedback/"+props.id)}
+        />
+         <Headerop
+          Icon={QuizIcon}
+          title="FAQ"
+          onClick={() => navigate("/Faq/"+props.id)}
         />
         {/* Notification section */}
 

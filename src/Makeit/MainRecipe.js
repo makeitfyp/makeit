@@ -1,4 +1,4 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import styled from "styled-components";
 import Dialog from "@material-ui/core/Dialog";
@@ -16,13 +16,13 @@ const APP_ID = "a52b4d43";
 const APP_KEY = "e0e5c667605f5e91d8275c973531b80a";
 
 const MainRecipe = () => {
-  
-  let {userID} = useParams();
+
+  let { userID } = useParams();
   const [searchQuery, updateSearchQuery] = useState("");
   const [recipeList, updateRecipeList] = useState([]);
   const [timeoutId, updateTimeoutId] = useState();
   const [cusine, setCusine] = useState("Italian");
-  const [selected, setSelected] = useState(["selected","none","none","none","none","none","none"]);
+  const [selectedd, setselectedd] = useState(["selectedd", "none", "none", "none", "none", "none", "none"]);
   const fetchData = async (searchString) => {
     const response = await Axios.get(
       `https://api.edamam.com/search?q=${searchString}&from=0&to=12&app_id=${APP_ID}&app_key=${APP_KEY}`
@@ -30,21 +30,21 @@ const MainRecipe = () => {
     console.log(response.data.hits)
     updateRecipeList(response.data.hits);
   };
-  useEffect(()=>{
+  useEffect(() => {
     fetchData(cusine);
 
-  },[cusine])
+  }, [cusine])
   const onTextChange = (e) => {
     clearTimeout(timeoutId);
     updateSearchQuery(e.target.value);
     const timeout = setTimeout(() => fetchData(e.target.value), 500);
     updateTimeoutId(timeout);
-    setSelected(["none","none","none","none","none","none","none"]);
-  
+    setselectedd(["none", "none", "none", "none", "none", "none", "none"]);
+
   };
 
   return (
-    <div><Header id={userID}/>
+    <div><Header id={userID} />
       <Container>
         <SearchBox>
           <SearchIcon />
@@ -54,69 +54,69 @@ const MainRecipe = () => {
             onChange={onTextChange}
           />
         </SearchBox>
-          <h1 id="title">
+        <h1 id="title">
           Choose A Filter or Search For A Recipe
-          </h1>
-              <Container>
-                <div className="Filter">
-                <p onClick={()=>{
-                  
-                  setSelected(["selected","none","none","none","none","none","none"])
-                  if(cusine!="Italian"){
-                    setCusine("Italian")
-                    updateSearchQuery("")
-                  }
-                }} id={selected[0]}>Italian</p>
-                <p onClick={()=>{
-                  
-                  setSelected(["none","selected","none","none","none","none","none"])
-                  if(cusine!="Indian"){
-                    setCusine("Indian")
-                    updateSearchQuery("")
-                  }
-                }}  id={selected[1]}>Indian</p>
-                <p onClick={()=>{
-                  
-                  setSelected(["none","none","selected","none","none","none","none"])
-                  if(cusine!="Chinese"){
-                    setCusine("Chinese")
-                    updateSearchQuery("")
-                  }
-                }}  id={selected[2]}>Chinese</p>
-                <p onClick={()=>{
-                  
-                  setSelected(["none","none","none","selected","none","none","none"])
-                  if(cusine!="Korean"){
-                    setCusine("Korean")
-                    updateSearchQuery("")
-                  }
-                }}  id={selected[3]}>Korean</p>
-                <p onClick={()=>{
-                  
-                  setSelected(["none","none","none","none","selected","none","none"])
-                  if(cusine!="Turkish"){
-                    setCusine("Turkish")
-                    updateSearchQuery("")
-                  }
-                }}  id={selected[4]}>Turkish</p>
-                <p onClick={()=>{
-                  
-                  setSelected(["none","none","none","none","none","selected","none"])
-                  if(cusine!="Burger"){
-                    setCusine("Burger")
-                    updateSearchQuery("")
-                  }
-                }}  id={selected[5]}>Burger</p>
-                <p onClick={()=>{
-                  
-                  setSelected(["none","none","none","none","none","none","selected"])
-                  if(cusine!="Pizza"){
-                    setCusine("Pizza")
-                    updateSearchQuery("")
-                  }
-                }}  id={selected[6]}>Pizza</p>
-                </div>
-              </Container>
+        </h1>
+        <Container>
+          <div className="Filter">
+            <p onClick={() => {
+
+              setselectedd(["selectedd", "none", "none", "none", "none", "none", "none"])
+              if (cusine != "Italian") {
+                setCusine("Italian")
+                updateSearchQuery("")
+              }
+            }} id={selectedd[0]}>Italian</p>
+            <p onClick={() => {
+
+              setselectedd(["none", "selectedd", "none", "none", "none", "none", "none"])
+              if (cusine != "Indian") {
+                setCusine("Indian")
+                updateSearchQuery("")
+              }
+            }} id={selectedd[1]}>Indian</p>
+            <p onClick={() => {
+
+              setselectedd(["none", "none", "selectedd", "none", "none", "none", "none"])
+              if (cusine != "Chinese") {
+                setCusine("Chinese")
+                updateSearchQuery("")
+              }
+            }} id={selectedd[2]}>Chinese</p>
+            <p onClick={() => {
+
+              setselectedd(["none", "none", "none", "selectedd", "none", "none", "none"])
+              if (cusine != "Korean") {
+                setCusine("Korean")
+                updateSearchQuery("")
+              }
+            }} id={selectedd[3]}>Korean</p>
+            <p onClick={() => {
+
+              setselectedd(["none", "none", "none", "none", "selectedd", "none", "none"])
+              if (cusine != "Turkish") {
+                setCusine("Turkish")
+                updateSearchQuery("")
+              }
+            }} id={selectedd[4]}>Turkish</p>
+            <p onClick={() => {
+
+              setselectedd(["none", "none", "none", "none", "none", "selectedd", "none"])
+              if (cusine != "Burger") {
+                setCusine("Burger")
+                updateSearchQuery("")
+              }
+            }} id={selectedd[5]}>Burger</p>
+            <p onClick={() => {
+
+              setselectedd(["none", "none", "none", "none", "none", "none", "selectedd"])
+              if (cusine != "Pizza") {
+                setCusine("Pizza")
+                updateSearchQuery("")
+              }
+            }} id={selectedd[6]}>Pizza</p>
+          </div>
+        </Container>
         <RecipeListContainer>
           {recipeList?.length ? (
             recipeList.map((recipe, index) => (
@@ -124,12 +124,12 @@ const MainRecipe = () => {
             ))
           ) : (
             <Placeholder>
-              
+
               <Container className="recipe">
-              { recipeList.map((recipe, index) => (
-              <RecipeComponent key={index} recipe={recipe.recipe} />
-               ))
-            }  
+                {recipeList.map((recipe, index) => (
+                  <RecipeComponent key={index} recipe={recipe.recipe} />
+                ))
+                }
               </Container>
               <Button> Featured Recipes</Button>
               <Container>

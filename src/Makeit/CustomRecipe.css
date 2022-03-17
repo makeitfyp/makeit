@@ -1,44 +1,64 @@
 .Filter {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  justify-content: center;
+  width: 90%;
+  justify-content:left;
   flex-wrap: wrap;
+  align-items:flex-start;
+  margin-left: 20px;
 }
 #none {
-  padding: 10px 20px 10px 20px;
-  font-size: 24px;
-  font-weight: 100;
-  background-color: forestgreen;
-  margin-left: 10px;
-  border-radius: 10px;
-  border: 1px solid black;
-  color: white;
-  margin-top: 10px;
+  padding: 5px;
+  font-size: 15px;
+  font-weight:lighter;
+  background-color: #F0F2F4 ;
+  margin-left: 4px;
+  margin-right: 4px;
+  border-radius: 4px;
+  color: #9A9CA2;
+  margin-top: 5px;
 }
-#selected {
-  background-color: red;
-  border: 1px solid forestgreen;
-  color: forestgreen;
-  cursor: pointer;
-}
-#selected:hover {
-  background-color: red;
-  border: 1px solid forestgreen;
-  color: white;
-  cursor: pointer;
+#selectedd {
+  padding: 5px;
+  font-size: 15px;
+  font-weight:lighter;
+  background-color: #93C759;
+  margin-left: 4px;
+  margin-right: 4px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  margin-top: 5px;
 }
 #none:hover {
-  background-color: red;
-  border: 1px solid forestgreen;
-  color: white;
-  cursor: pointer;
+  padding: 5px;
+  font-size: 15px;
+  font-weight:lighter;
+  background-color: #F0F2F4 ;
+  margin-left: 4px;
+  margin-right: 4px;
+  border-radius: 4px;
+  color: #9A9CA2;
+  margin-top: 5px;
 }
+
+#selectedd:hover {
+  padding: 5px;
+  font-size: 15px;
+  font-weight:lighter;
+  background-color: #93C759 ;
+  margin-left: 4px;
+  margin-right: 4px;
+  border-radius: 4px;
+  color: #FFFFFF;
+  margin-top: 5px;
+}
+
 .recipe {
-  margin-top: 1000px;
+  width: 100%;
 }
 #title {
-  text-align: center;
+  text-align: left;
   margin-top: 20px;
   margin-bottom: 20px;
+  padding-left: 20px;
 }

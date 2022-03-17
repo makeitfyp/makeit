@@ -243,6 +243,16 @@ li {
   align-items: center;
   margin-top: 30px;
 }
+.close_button{
+  margin-left: 380px;
+
+  width: 100px;
+  height: 30px;
+  border: 1px solid forestgreen;
+  color: forestgreen;
+  font-size: 16px;
+  align-items: center;
+}
 .customButtons {
   margin-left: 50px;
   width: 100px;

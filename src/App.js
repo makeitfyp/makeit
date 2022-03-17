@@ -17,6 +17,7 @@ import Header from './Makeit/Header';
 import MainRecipe from "./Makeit/MainRecipe";
 import CustomRecipe from "./Makeit/CustomRecipe";
 import Feed from "./Makeit/Feed";
+import Faq from "./Makeit/Faq";
 import RecipeDetection from "./Makeit/RecipeDetection";
 import DietPlan from "./Makeit/DietPlan";
 import UserFeedback from "./Makeit/UserFeedback";
@@ -47,7 +48,8 @@ const App = () => {
           <Route exact path="/DietPlanCustom/:userID" element={<DietPlanCustom />} />
           <Route exact path="/Home/:userID" element={<Home />} />
           <Route exact path="/Survey/:userID" element={<Survey />} />
-
+          <Route exact path="/AR/:userID" element={<AR />} />
+          <Route exact path="/Faq/:userID" element={<Faq />} />
         </Routes>
       </Router>
 

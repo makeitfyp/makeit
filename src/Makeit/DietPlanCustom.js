@@ -187,7 +187,7 @@ function DietPlanCustom() {
                 })}
               </ul>
             </div>
-            <button
+            <button className='close_button'
               onClick={() => setmodalopen(false)}       >
               close
             </button>
