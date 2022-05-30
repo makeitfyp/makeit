@@ -1,0 +1,31 @@
+@media (max-width:400px){
+   .AuthApp {
+       flex: 1;
+       display: flex;
+       flex-flow: column nowrap;
+       height: 100vh;
+       width: 100vw;
+   }
+
+}
+
+@media (min-width:400px) and (max-width:800px) {
+    
+}
+
+@media  (min-width:1300px) and (max-width:1600px) {
+    .AuthApp {
+        flex: 1;
+        display: flex;
+        flex-flow: column nowrap;
+        height: 100vh;
+        width: 100vw;
+    }
+    .AuthApp .NavBar {
+        flex: 0.3;
+    }
+    .AuthApp .Content {
+        flex: 0.6;
+        margin-top: 6.9%;
+    }
+}

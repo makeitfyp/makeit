@@ -1,0 +1,92 @@
+@media (min-width:1300px) and (max-width:1600px) {
+    .Notification {
+        height: 100vh;
+        display: flex;
+        flex-flow: column nowrap;
+        flex: 1;
+    }
+
+    .Notification .AllNotification {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        width: 100%;
+
+    }
+
+    .Notification .AllNotification .unopened {
+        display: flex;
+        width: 50%;
+        flex-flow: row nowrap;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        margin-top: 1%;
+        padding-left: 2%;
+        padding-right: 2%;
+        border-radius: 15px;
+        justify-content: space-between;
+        background-color: #5c5a5a60;
+        border: 1px solid black;
+        cursor: pointer;
+
+    }
+
+    .Notification .AllNotification .opened {
+        display: flex;
+        width: 50%;
+        flex-flow: row nowrap;
+        padding-top: 0.5%;
+        padding-bottom: 0.5%;
+        margin-top: 2%;
+        padding-left: 2%;
+        padding-right: 2%;
+        border-radius: 15px;
+        justify-content: space-between;
+        background-color: #d6fac3;
+        border: 1px solid black;
+        cursor: pointer;
+
+    }
+    table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 1px solid #bceea159;
+        text-align: left;
+        padding: 8px;
+      }
+      
+     
+    .Notification .oneNotification {
+        display: flex;
+        width: 60%;
+        height: auto;
+        align-self: center;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3%;
+        padding: 3px;
+        box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    }
+    .Notification .oneNotification span{
+        margin-right: 10px;
+        font-weight: 600;
+    }
+
+    .Notification .oneNotification .button {
+        background-color: #85BE66;
+        color: #FFFFFF;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        margin-bottom: 1%;
+
+        font-size: 16px;
+        font-weight: bold;
+        width: 20%;
+        border: none;
+    }
+}

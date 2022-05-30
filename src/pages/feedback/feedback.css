@@ -1,0 +1,73 @@
+
+
+
+@media  (min-width:1300px) and (max-width:1600px) {
+    .Feedback{
+        width: 100vw;
+        height: 80%;
+    }
+    .Feedback .formContainer {
+       display: flex;
+       flex-flow: column nowrap;
+    }
+    .Feedback .formContainer form {
+        display: flex;
+        align-items: center;
+        flex-flow: column wrap;
+        width: 25%;
+        align-self: center;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        padding-left: 40px;  
+        padding-right: 40px;
+    }
+    
+    .Feedback .formContainer .formGroup {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100%;
+        align-self: center;
+        margin-top: 3%;
+        padding-top: 10px;
+        text-align: center;
+    }
+    
+    .Feedback .formContainer .formGroup label{
+        font-size: 15px;
+        font-weight: bold;
+        margin-bottom: 1%;
+        color: #85BE66;
+        text-align: left;
+
+    }
+    .Feedback .formContainer .formGroup input{
+        font-size: 15px;
+        font-weight:lighter;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+        outline: none;
+        border: #85BE66 1px solid ;
+        border-radius: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        color: black;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+    
+    .Feedback .formContainer .formGroup #submit {
+        background-color:#85BE66; 
+        color: #FFFFFF;
+        margin-top: 1%;
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .Feedback .formContainer .formGroup #submit:hover {
+        background-color:#FFFFFF;
+        color: #000000;
+        margin-top: 1%;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}

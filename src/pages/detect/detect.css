@@ -1,0 +1,223 @@
+.inputHolder {
+    margin: 15px 0;
+}
+
+
+.mainWrapper {
+    padding: 0 10px;
+}
+
+.mainContent {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+
+    @media (max-width: 800px) {
+        flex-direction: column;
+    }
+}
+
+.inputHolder {
+    padding: 0 10px;
+    display: flex;
+    max-width: 400px;
+    width: 100%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 0;
+    display: inline-block;
+    border: 1px solid #222;
+    outline: none;
+}
+
+.inputHolder .uploadInput {
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+    opacity: 0;
+}
+
+.inputHolder .or {
+    align-items: center;
+    display: inline-flex;
+    padding: 0 20px;
+}
+
+.inputHolder .uploadImage {
+    padding: 8px 16px;
+    font-size: 16px;
+    background: #85BE66;
+    color: #fff;
+    display: inline-block;
+    border: 0;
+    border-radius: 0;
+    cursor: pointer;
+    outline: none;
+
+}
+
+.imageHolder {
+    width: 60%;
+    display: block;
+    flex: 0 0 60%;
+    max-width: 900px;
+    height: 80vmin;
+    margin-bottom: -199px;
+}
+
+.imageHolder .img {
+    display: block;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
+
+
+.resultsHolder {
+
+    @media (max-width: 800px) {
+        width: 100%;
+        padding: 0px;
+    }
+}
+
+.resultsHolder .result {
+    border: 1px solid #333;
+    margin: 0 0 10px;
+    padding: 10px;
+
+}
+
+.resultsHolder .name {
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.resultsHolder .confidence {
+    display: block;
+    font-weight: 300;
+}
+
+.resultsHolder .bestGuess {
+    background: #fff;
+    padding: 2px 6px;
+    color: #333;
+    margin-left: 3px;
+}
+
+
+
+.detectbutton {
+    padding: 12px 17px;
+    font-size: 18px;
+    margin-top: -40px;
+    background: #85BE66;
+    color: #fff;
+    display: inline-block;
+    border: 0;
+    border-radius: 5;
+    cursor: pointer;
+    outline: none;
+}
+
+.recentPredictions {
+    margin: 40px 0 0;
+    background: #f5eeff;
+    padding: 10px;
+
+}
+
+.recentPredictions .img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+
+    @media (max-width: 700px) {
+        height: 260px;
+    }
+}
+
+.recentPredictions .recentImages {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.prerecipe {
+    text-align: center;
+}
+
+.recentPredictions .recentPrediction {
+    flex: 0 0 20%;
+    cursor: pointer;
+
+}
+
+
+
+
+
+/* CSS */
+.pythonbutton {
+    align-items: center;
+    background-color: #85BE66;
+    border: 2px solid rgb(66, 66, 66);
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    font-weight: 600;
+    margin-left: 40%;
+    margin-top: 80px;
+    margin-bottom: 100px;
+
+}
+
+.pythonbutton:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+}
+
+.pythonbutton:hover:after {
+    transform: translate(0, 0);
+}
+
+.pythonbutton:active {
+    background-color: #bdfa9c;
+    outline: 0;
+}
+
+.pythonbutton:hover {
+    outline: 0;
+}
+
+@media (min-width: 768px) {
+    .pythonbutton {
+        padding: 0 40px;
+    }
+}

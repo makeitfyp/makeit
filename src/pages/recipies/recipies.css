@@ -1,0 +1,283 @@
+@media (max-width:400px) {
+
+}
+@media  (min-width:400px) and (max-width:1300px) {
+    .Recipie {
+        flex: 1;
+        display: flex;
+        flex-flow: column nowrap;
+        overflow: hidden
+    }
+    /*fixed top
+         .Recipie .top {
+        flex: 0.4;
+        width: 100vw;
+        top: 17.5%;
+        position: fixed;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px, rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px, rgba(240, 46, 170, 0.05) 0px 25px;
+        padding-top: 15px;
+        padding-bottom: 30px;
+    }*/
+    .Recipie .top {
+        flex: 0.4;
+        width: 100vw;
+        background-color: #FFFFFF;
+        position: static;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 30px;
+       
+    }
+    .Recipie .top .searchbar {
+        flex: 0.4;
+        display: flex;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        padding:1%;
+        width: 30%;
+        justify-content: center;
+
+    }
+    .Recipie .top .searchbar .container {
+        flex: 1;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    .Recipie .top .searchbar .container #srchIcon {
+        font-size: 30px;
+        margin-right: 2px;
+    }
+    .Recipie .top .searchbar .container input {
+        width: 90%;
+        outline: none;
+        border:none;
+        font-size: 20px;
+    }
+    .Recipie .top .cusines {
+        margin-top: 30px;
+        flex: 0.6;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        width: 100%;
+       
+    }
+    .Recipie .top .cusines .cusinesCard {
+        margin-right: 1%;
+        margin-left: 1%;
+        width: 25%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        background-color: #FFFFFF;
+        border-radius: 14px;  
+    }
+    .Recipie .top .cusines .cusinesCard p {
+        text-align: center;
+    }
+
+    .Recipie .top .cusines .cusinesCardSelected {
+        margin-right: 1%;
+        margin-left: 1%;
+        width: 25%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        background-color: #85BE66;
+        border-radius: 14px;
+    }
+    .Recipie .top .cusines .cusinesCardSelected p {
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .Recipie .list {
+        
+        padding-top: 2%;
+        flex: 0.5;
+        margin-top: 15%;
+        display: flex;
+        flex-flow: row wrap;
+        padding-bottom: 2%;
+    }
+    .Recipie .list .RecipieCard {
+        width: 20%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        margin-right: 2%;
+        margin-left: 2%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        text-decoration: none;
+        border-radius: 15px;
+        padding-bottom: 5px;
+        height: 350px;
+
+    }
+
+    .Recipie .list .RecipieCard #image {
+        width: 80%;
+        height: 60%;
+        border-radius: 10px;
+    }
+    .Recipie .list .RecipieCard p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .Recipie .list .RecipieCard #touchp {
+        text-decoration: none;
+        color: black;
+        border:1px solid black;
+        font-size: 15px;
+        width: 80%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        text-align: center;
+        background-color: #FFFFFF;
+    }
+    .Recipie .list .RecipieCard #touchp:hover {
+        background-color: antiquewhite;
+    }
+}
+@media  (min-width:1300px) and (max-width:1600px) {
+    .Recipie {
+        flex: 1;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+    
+    .Recipie .top {
+        flex: 0.4;
+        width: 100vw;
+        background-color: #FFFFFF;
+        position: static;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        padding-top: 15px;
+        padding-bottom: 10px;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+
+       
+    }
+    .Recipie .top .searchbar {
+        flex: 0.4;
+        display: flex;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        padding:1%;
+        margin-top: 2%;
+        width: 40%;
+
+    }
+    .Recipie .top .searchbar .container {
+        flex: 1;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+    }
+    .Recipie .top .searchbar .container #srchIcon {
+        font-size: 30px;
+        margin-right: 2px;
+    }
+    .Recipie .top .searchbar .container input {
+        width: 90%;
+        outline: none;
+        border:none;
+        font-size: 20px;
+    }
+    .Recipie .top .cusines {
+        margin-top: 30px;
+        flex: 0.6;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        width: 80%;
+        font-size: 14px;
+        padding-bottom: 15px;
+       cursor: pointer;
+    }
+    .Recipie .top .cusines .cusinesCard {
+        margin-right: 1%;
+        margin-left: 1%;
+        width: 25%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        background-color: #FFFFFF;
+        border-radius: 14px;
+        
+    }
+    .Recipie .top .cusines .cusinesCard p {
+        text-align: center;
+    }
+
+    .Recipie .top .cusines .cusinesCardSelected {
+        margin-right: 1%;
+        margin-left: 1%;
+        width: 25%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        background-color: #85BE66;
+        border-radius: 14px;
+    }
+    .Recipie .top .cusines .cusinesCardSelected p {
+        text-align: center;
+        color: #FFFFFF;
+    }
+
+    .Recipie .list {
+        
+        padding-top: 2%;
+        flex: 0.5;
+        display: flex;
+        flex-flow: row wrap;
+        padding-bottom: 2%;
+    }
+    .Recipie .list .RecipieCard {
+        width: 20%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        margin-right: 2%;
+        margin-left: 2%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        text-decoration: none;
+        border-radius: 15px;
+        padding-bottom: 5px;
+        height: 350px;
+        cursor: pointer;
+
+    }
+
+    .Recipie .list .RecipieCard #image {
+        width: 80%;
+        height: 45%;
+        border-radius: 10px;
+        
+    }
+    .Recipie .list .RecipieCard p{
+        font-size: 15px;
+        text-align: center;
+    }
+    .Recipie .list .RecipieCard #touchp {
+        text-decoration: none;
+        color: black;
+        border:1px solid black;
+        font-size: 15px;
+        width: 60%;
+        padding-top: 3%;
+        padding-bottom: 3%;
+        text-align: center;
+        background-color: #FFFFFF;
+    }
+    .Recipie .list .RecipieCard #touchp:hover {
+        background-color: #85BE66;
+    }
+  
+}

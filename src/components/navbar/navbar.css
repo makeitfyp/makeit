@@ -1,0 +1,93 @@
+@media (max-width:400px){
+
+}
+
+@media (min-width:400px) and (max-width:800px){
+
+
+}
+@media  (min-width:1300px) and (max-width:1600px) {
+    .navbar {
+        flex: 1;
+        display: flex;
+        flex-flow: row nowrap;
+        background-color: #85BE66;
+        padding-bottom: 0.5%;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+    }
+    .navbar .logoContainer {
+        flex: 0.2;
+    }
+    .navbar .logoContainer .imagecontainer {
+        flex: 1;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .navbar .logoContainer .imagecontainer #image {
+        width: 50%;
+        height: 40%;
+        margin-top: 1%;
+    }
+    .navbar .componentContainer {
+        flex: 0.8;
+      
+    }
+    .navbar .buttons {
+        flex: 1;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
+        padding-left: 100px;
+        margin-top: 0.5%;
+       
+
+    }
+    .navbar .buttons .buttonContainer {
+        display: flex;
+        flex-flow: column nowrap;
+        text-decoration: none;
+        background-color: #FFFFFF;
+        height: 1%;
+        align-items: center;
+        width: 7%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        margin-right: 8px;
+        border-radius: 15%;
+        padding-top: 1%;
+    }
+    .navbar .buttons .buttonContainer #btnimage {
+        font-size: 25px;
+        color: black;
+    }
+    .navbar .buttons .buttonContainer p{
+        font-size: 12px;
+        color: black;
+    }
+    .navbar .buttons  .buttonContainerSelected {
+        display: flex;
+        flex-flow: column nowrap;
+        height: 1%;
+        text-decoration: none;
+        background-color: #85BE66;
+        align-items: center;
+        width: 7%;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+        margin-right: 8px;
+        border-radius: 15%;
+        padding-top: 1%;
+    }
+    .navbar .buttons  .buttonContainerSelected #btnimage {
+        font-size: 25px;
+        color: #FFFFFF;
+    }
+    .navbar .buttons  .buttonContainerSelected p{
+        font-size: 12px;
+        color: #FFFFFF;
+    }
+}
